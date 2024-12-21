@@ -65,30 +65,40 @@
 
 
 /* SECTION NO 1 */
-
 .section-1 {
     background-color: #F2F2F2;
     height: 450px;
     padding: 0px;
+    display: flex; /* Allow vertical alignment */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
 }
 
 .section-1-inner-col {
     position: relative;
+    text-align: center; /* Center the image */
 }
 
 .image-frame {
-    width: 380px;
-    height: 380px;
+    width: 372px;
+    height: 372px;
     background-image: url(../images/monir.jpg);
     background-position: center;
     background-size: cover;
-    border: 8px solid #FFFFFF;
+    border: 8px solid #556677; /* Updated border color */
     border-radius: 50%;
-    position: absolute;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 20px; /* Added spacing below the image */
+    margin-bottom: 20px; /* Added margin to push the text down */
+    margin: 0 auto; /* Centers the image horizontally */
+    position: relative; /* Enables the transform property to work */
+    top: 38px; /* Shifts the frame downward */
+}
+
+.primary-heading {
+    font-size: 36px; /* Adjust the size as needed */
+    font-weight: normal;
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adjust spacing from the profile picture */
+    margin-bottom: 10px; /* Adjust spacing between the heading and the "Read More" text */
 }
 
 .paragraph {
